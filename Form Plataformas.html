@@ -2,9 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Formulario de pedidos</title>
 </head>
+<style> body {background-color:beige;}</style>
 <body>
 
+<h3>Formulario de pedidos</h3>
+<form method="post">
+<fieldset>
+                <legend>Datos del cliente</legend>
+            <table>
+
+                    <tbody>
+                        <tr>
+
+
+                            <td><label for="nombre">Nombre:</label></td>
+                            <td> <input type="text" id="nombre" name="nombre"> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="apellido">Apellido:</label></td>
+                            <td> <input type="text" id="apellido" name="apellido"> </td>
+                        </tr>
+                        <tr>
+                             <td> <label for="direccion">direccion:</label> </td>
+                             <td> <input type="text" id="direccion" name="direccion"> </td>
+                        </tr>
+                        <tr>
+                           <td> <label for="teléfono"> Ingrese su número de teléfono:</label> </td>
+                           <td> <input type="tel" id=teléfono name="teléfono" pattern="[0-9]{10}"> </td>
+                        </tr>
+                    </tbody>
+            </table>
+
+        <br>
+    </fieldset>
+    <h4> Seleccione la cantidad de productos:</h4>
+                <input type="radio" id="1-5" name="cantidad" value="1-5">
+                <label for="1-5">1-5</label>
+        <br>
+               <input type="radio" id="10-15" name="cantidad" value="10-15">
+               <label for="10-15">10-15</label>
+        <br>
+
+               <input type="radio" id="20-25" name="cantidad" value="20-25">
+               <label for="20-25">20-25</label>
+        <br>
+
+               <input type="radio" id="30-35" name="cantidad" value="30-35">
+               <label for="30-35">30-35</label>
+        <br>
+    <h4>Lugar de envio:</h4>
+              <label for="ciudad">Seleccione su ciudad:</label>
+<select id="ciudad" name="ciudad">
+              <option value="Guayaquil">Guayaquil</option>
+    <option value="Quito">Quito</option>
+    <option value="Esmeraldas">Esmeraldas</option>
+    <option value="Cuenca">Cuenca</option>
+    <option value="Santa Elena">Santa Elena</option>
+    <option value="Babahoyo">Babahoyo</option>
+    <option value="Otro">Otro</option>
+    </select>
+   <h5>Registar su información</h5>
+   <input type="submit" value="Registrar">
+    </form>
 </body>
 </html>
